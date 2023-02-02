@@ -1,3 +1,5 @@
+# Задача -- крестики-нолики:
+
 # import random
 
 # player1 = input("Enter the first player name: ")
@@ -121,7 +123,7 @@ for i in text:
         count = 1
     else:
         count+=1
-        if count > 8:       # Сделал проверку на двузнайное число, чтобы пра наличие в тексте сжатия более 9 подряд идущих цифр, а не букв, не получилось двузначное число и не возникло проблем при декодировке
+        if count > 8:       # Сделал проверку на двузначное число, чтобы пра наличие в тексте сжатия более 9 подряд идущих цифр, а не букв, не получилось двузначное число и не возникло проблем при декодировке
             archive+= f"{count}{simbol}"
             simbol = i
             count = 1
@@ -151,27 +153,3 @@ print("Декодировка:" + decode(archive))
 
 
 
-
-
-
-# temp_list = list(archive)
-# print(temp_list)
-
-# def decode():
-#     for i in range(0, -1, 2):
-#         list.append([i])
-# print(list[i])
-
-# decode = list(archive)
-# print(decode)
-# for i in archive:
-#     decode +=f"{archive[i]}*{archive[i+1]}"
-# print(decode)
-
-
-# def chec_decode(archive):
-#     for i in archive:
-#         if i%2 == 0:
-#             return True
-
-# decode = f"{lambda i:   }"
